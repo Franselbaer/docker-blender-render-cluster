@@ -17,5 +17,5 @@ RUN emerge media-gfx/blender
 RUN rm -rf /usr/portage
 
 ADD scripts /root/
-CMD blender -b -P /root/renderServerStartup.py
-EXPOSE 8000
+CMD /root/start.sh
+EXPOSE 8000 9000
